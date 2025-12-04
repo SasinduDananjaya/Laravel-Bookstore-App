@@ -1,0 +1,45 @@
+/* Fade out animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+/* Progress bar animation */
+@keyframes progress {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+.progress-bar {
+    animation: progress 3s linear forwards;
+}
+
+/* Slide in animation when message appears */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert-slide-in {
+    animation: slideIn 0.3s ease-out;
+}
